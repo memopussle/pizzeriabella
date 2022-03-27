@@ -1,0 +1,44 @@
+.logo {
+  width: 30rem;
+  padding: 2rem;
+  margin: 0 -8.5rem;
+}
+
+.navigation {
+  padding: 3rem;
+  position: relative;
+
+  &__nav {
+    margin-right: 5.5rem;
+
+    &--shopping-cart {
+      width: 1.5rem;
+    }
+
+    &--home,
+    &--about,
+    &--menu,
+    &--contact,
+    &--login {
+      font-size: 1.5rem;
+      color: var(--color-font-normal);
+      font-weight: 300;
+    }
+  }
+
+  &__logo {
+    width: 30rem;
+    position: absolute;
+    top: 1rem;
+    left: -7rem;
+  }
+}
+
+.navigation-background {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
