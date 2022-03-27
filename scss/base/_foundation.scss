@@ -14,3 +14,10 @@ body {
   z-index: 1000;
 }
 
+*,
+*::after,
+*::before {
+margin:0;
+padding:0;
+
+}

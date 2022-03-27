@@ -1,11 +1,37 @@
 .header {
   height: 95vh;
- width: 100%;
+  width: 100%;
   background-size: cover;
   background-position: top;
 
   &__text-box {
     position: absolute;
+    z-index: 10;
+    color: var(--color-font-normal);
+    font-weight: light;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    transform: translateX(-50%,-50%);
+    top: 38%;
+    left: 25%;
+
+    &--main {
+      //separate main as a block
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1.5rem;
+      font-size: var(--font-heading-desktop);
+
+    }
+
+    &--sub {
+      //separate sub as a display: block
+      display: block;
+      font-size: var(--font-body-desktop);
+      max-width: 40rem;
+    }
   }
 }
-

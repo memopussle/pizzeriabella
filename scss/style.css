@@ -14,6 +14,13 @@ body {
   z-index: 1000;
 }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   width: 30rem;
   padding: 2rem;
@@ -46,9 +53,11 @@ body {
   left: -7rem;
 }
 
-.navigation-background {
-  background-image: url(../img/header.jpg);
+.home-background {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   width: 100vw;
@@ -64,9 +73,49 @@ body {
 
 .header__text-box {
   position: absolute;
+  z-index: 10;
+  color: var(--color-font-normal);
+  font-weight: light;
+  text-align: center;
+  -webkit-transform: translateX(-50%, -50%);
+          transform: translateX(-50%, -50%);
+  top: 38%;
+  left: 25%;
+}
+
+.header__text-box--main {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  font-size: var(--font-heading-desktop);
+}
+
+.header__text-box--sub {
+  display: block;
+  font-size: var(--font-body-desktop);
+  max-width: 40rem;
 }
 
 :root {
   --color-font-normal: #ffffff;
+  --color-primary: #B1441E;
+}
+
+:root {
+  --font-heading-desktop: 3.5rem;
+  --font-body-desktop: 1.5rem;
+  --font-heading-tablet: 3rem;
+  --spacing-heading: 1.5rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--font-body-desktop);
+  background-color: var(--color-primary);
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
