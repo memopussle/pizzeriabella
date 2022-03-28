@@ -117,6 +117,7 @@ body {
 :root {
   --color-font-normal: #ffffff;
   --color-primary: #B1441E;
+  --color-primary-dark: #000000;
 }
 
 :root {
@@ -153,6 +154,7 @@ body {
   background: none;
   border: none;
   margin: 1rem 0;
+  z-index: 100;
 }
 
 .hamburger__bar, .hamburger:after, .hamburger:before {
@@ -161,7 +163,7 @@ body {
   width: 100%;
   height: 0.3rem;
   background-color: var(--color-font-normal);
-  margin: .3rem 0;
+  margin: 0.3rem 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -178,6 +180,38 @@ body {
 
 .hamburger.is-active .hamburger__bar {
   opacity: 0;
+}
+
+.hamburger__nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--color-primary-dark);
+  padding-top: 10rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hamburger__nav--home, .hamburger__nav--menu, .hamburger__nav--contact, .hamburger__nav--about, .hamburger__nav--login, .hamburger__nav--shopping-cart {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-font-normal);
+  font-size: var(--font-body-desktop);
+}
+
+.hamburger__nav--home:hover, .hamburger__nav--menu:hover, .hamburger__nav--contact:hover, .hamburger__nav--about:hover, .hamburger__nav--login:hover, .hamburger__nav--shopping-cart:hover {
+  color: #adadad;
+  cursor: default;
+}
+
+.hamburger__nav.is-active {
+  left: 0;
+  position: absolute;
+  z-index: 99;
 }
 
 @media (max-width: 500px) {
