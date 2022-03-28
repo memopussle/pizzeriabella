@@ -142,6 +142,44 @@ body {
   border: none;
 }
 
+.hamburger {
+  position: relative;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  margin: 1rem 0;
+}
+
+.hamburger__bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--color-font-normal);
+  margin: .3rem 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  -webkit-transform: rotate(-45deg) translate(-0.6rem, 4px);
+          transform: rotate(-45deg) translate(-0.6rem, 4px);
+}
+
+.hamburger.is-active:after {
+  -webkit-transform: rotate(45deg) translate(-0.6rem, -4px);
+          transform: rotate(45deg) translate(-0.6rem, -4px);
+}
+
+.hamburger.is-active .hamburger__bar {
+  opacity: 0;
+}
+
 @media (max-width: 500px) {
   .nav__medium {
     display: -webkit-box;
@@ -153,9 +191,6 @@ body {
   }
   .nav__medium--logo {
     width: 9rem;
-  }
-  .nav__medium--hamburger, .nav__medium--shopping-cart {
-    width: 1.5rem;
   }
 }
 

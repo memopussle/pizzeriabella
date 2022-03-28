@@ -1,16 +1,10 @@
 //////////////////////HOME PAGE/////////////////////
 @media (max-width: 500px) {
-    
   .nav__medium {
     display: flex;
     justify-content: space-between;
-   &--logo {
-       width: 9rem;
-   }
-
-    &--hamburger,
-    &--shopping-cart {
-        width: 1.5rem;
+    &--logo {
+      width: 9rem;
     }
   }
 }
@@ -19,7 +13,6 @@
     padding: 0 2.4rem;
     position: relative;
   }
-
 
   .header__text-box {
     &--main {
@@ -34,7 +27,7 @@
     position: absolute;
     top: 40%;
     left: 2%;
-    
+
     &--main {
       font-size: var(--font-heading-tablet);
       letter-spacing: var(--spacing-tablet);
