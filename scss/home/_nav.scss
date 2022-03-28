@@ -35,14 +35,30 @@
 }
 
 .home-background {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/header.jpg);
- 
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   width: 100vw;
   position: absolute;
+}
+
+//NAVIGATION ON TABLET
+.nav__medium {
+  padding: var(--spacing-heading) 0;
+  display: flex;
+  justify-content: space-between;
+
+  &--logo {
+    width: 15rem;
+    display: inline-block;
+  }
+
+  &--hamburger,
+  &--shopping-cart {
+    width: 2rem;
+  }
 }

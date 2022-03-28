@@ -64,6 +64,25 @@ body {
   position: absolute;
 }
 
+.nav__medium {
+  padding: var(--spacing-heading) 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__medium--logo {
+  width: 15rem;
+  display: inline-block;
+}
+
+.nav__medium--hamburger, .nav__medium--shopping-cart {
+  width: 2rem;
+}
+
 .header {
   height: 95vh;
   width: 100%;
@@ -80,7 +99,7 @@ body {
   -webkit-transform: translateX(-50%, -50%);
           transform: translateX(-50%, -50%);
   top: 38%;
-  left: 25%;
+  left: 20%;
 }
 
 .header__text-box--main {
@@ -93,7 +112,6 @@ body {
 .header__text-box--sub {
   display: block;
   font-size: var(--font-body-desktop);
-  max-width: 40rem;
 }
 
 :root {
@@ -106,6 +124,11 @@ body {
   --font-body-desktop: 1.5rem;
   --font-heading-tablet: 3rem;
   --spacing-heading: 1.5rem;
+  --font-body-tablet: 1.3rem;
+  --font-heading-mobile: 2rem;
+  --font-body-mobile: 1.2rem;
+  --spacing-tablet: 1.2rem;
+  --spacing-mobile: 1rem;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -117,5 +140,48 @@ body {
   border-radius: 0;
   padding: 0.5rem 2rem;
   border: none;
+}
+
+@media (max-width: 500px) {
+  .nav__medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav__medium--logo {
+    width: 9rem;
+  }
+  .nav__medium--hamburger, .nav__medium--shopping-cart {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding: 0 2.4rem;
+    position: relative;
+  }
+  .header__text-box--main {
+    font-size: var(--font-heading-mobile) !important;
+    letter-spacing: var(--spacing-mobile) !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+  }
+  .header__text-box--main {
+    font-size: var(--font-heading-tablet);
+    letter-spacing: var(--spacing-tablet);
+  }
+  .header__text-box--sub {
+    font-size: var(--font-body-tablet);
+  }
 }
 /*# sourceMappingURL=style.css.map */

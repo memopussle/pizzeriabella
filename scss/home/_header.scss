@@ -16,7 +16,7 @@
     // align-items: center;
     transform: translateX(-50%,-50%);
     top: 38%;
-    left: 25%;
+    left: 20%;
 
     &--main {
       //separate main as a block
@@ -31,7 +31,6 @@
       //separate sub as a display: block
       display: block;
       font-size: var(--font-body-desktop);
-      max-width: 40rem;
     }
   }
 }

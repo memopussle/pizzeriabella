@@ -1,1 +1,47 @@
-//HOME PAGE
+//////////////////////HOME PAGE/////////////////////
+@media (max-width: 500px) {
+    
+  .nav__medium {
+    display: flex;
+    justify-content: space-between;
+   &--logo {
+       width: 9rem;
+   }
+
+    &--hamburger,
+    &--shopping-cart {
+        width: 1.5rem;
+    }
+  }
+}
+@media (max-width: 769px) {
+  .container {
+    padding: 0 2.4rem;
+    position: relative;
+  }
+
+
+  .header__text-box {
+    &--main {
+      font-size: var(--font-heading-mobile) !important;
+      letter-spacing: var(--spacing-mobile) !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    
+    &--main {
+      font-size: var(--font-heading-tablet);
+      letter-spacing: var(--spacing-tablet);
+    }
+
+    &--sub {
+      font-size: var(--font-body-tablet);
+    }
+  }
+}
