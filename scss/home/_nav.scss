@@ -43,6 +43,7 @@
       display: block;
       padding-top: 0.5rem;
     }
+
   }
 }
 
@@ -60,7 +61,7 @@
 
 //NAVIGATION ON TABLET
 .nav__medium {
-  padding: var(--spacing-heading) 0;
+  padding: 3rem 0;
 
   &--logo {
     font-weight: 300;

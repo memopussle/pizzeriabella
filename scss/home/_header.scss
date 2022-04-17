@@ -8,6 +8,13 @@
     color: var(--color-font-normal);
     text-align: center;
     width: 50rem;
+    position: relative;
+    z-index: 1;
+     transition: 0.2s;
+   
+     &.is-active {
+       opacity: 0;
+     }
 
     &--main {
       //separate main as a block
@@ -33,4 +40,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }

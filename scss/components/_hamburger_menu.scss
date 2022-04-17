@@ -48,11 +48,13 @@
   display: block;
   position: fixed;
   top: 0;
+
+  //hamburger shows up
   right: 100%;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--color-primary-dark);
-  padding-top: 10rem;
+  padding-top: 13rem;
   transition: 0.4s;
 
   &--shopping-cart {
@@ -75,12 +77,12 @@
 
     &:hover {
       color: var(--color-font-gray);
-      cursor: default;
     }
   }
 }
 ///hamburger is visible --> have active class
 .hamburger__nav.is-active {
+  //hide hamburger menu
   right: 0;
   position: absolute;
   z-index: 99;
