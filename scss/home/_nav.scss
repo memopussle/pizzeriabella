@@ -1,15 +1,10 @@
-.logo {
-  width: 30rem;
-  padding: 2rem;
-  margin: 0 -8.5rem;
-}
 
 .navigation {
-  padding: 3rem;
+  padding: 3rem 0;
   position: relative;
 
   &__nav {
-    margin-right: 5.5rem;
+
 
     &--shopping-cart {
       width: 1.5rem;
@@ -37,10 +32,17 @@
 
 
   &__logo {
-    width: 30rem;
-    position: absolute;
-    top: 1rem;
-    left: -7rem;
+    &--main{
+    letter-spacing: var(--spacing-logo);
+    font-weight: 300;
+    text-align: center;
+    }
+
+    &--sub {
+      font-size: 0.9rem;
+      display: block;
+      padding-top: 0.5rem;
+    }
   }
 }
 
@@ -59,13 +61,18 @@
 //NAVIGATION ON TABLET
 .nav__medium {
   padding: var(--spacing-heading) 0;
-  display: flex;
-  justify-content: space-between;
 
   &--logo {
-    width: 15rem;
-    display: inline-block;
+    font-weight: 300;
+    letter-spacing: var(--spacing-logo);
+    text-align: center;
+
   }
+  &--sub {
+      font-size: 0.7rem;
+      display:block;
+      padding-top: 0.5rem;
+    }
 
   &--hamburger,
   &--shopping-cart {

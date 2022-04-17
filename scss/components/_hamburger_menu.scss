@@ -48,7 +48,7 @@
   display: block;
   position: fixed;
   top: 0;
-  left: 100%;
+  right: 100%;
   width: 100vw;
   min-height: 100vh;
   background-color: var(--color-primary-dark);
@@ -81,7 +81,7 @@
 }
 ///hamburger is visible --> have active class
 .hamburger__nav.is-active {
-  left: 0;
+  right: 0;
   position: absolute;
   z-index: 99;
 }

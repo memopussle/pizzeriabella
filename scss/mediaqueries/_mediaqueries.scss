@@ -1,18 +1,6 @@
 //////////////////////HOME PAGE/////////////////////
-@media (max-width: 500px) {
-  .nav__medium {
-    display: flex;
-    justify-content: space-between;
-    &--logo {
-      width: 9rem;
-    }
-  }
-}
+
 @media (max-width: 769px) {
-  .container {
-    padding: 0 2.4rem;
-    position: relative;
-  }
 
   .header__text-box {
     &--main {
@@ -23,10 +11,11 @@
 }
 
 @media (max-width: 992px) {
+    .container {
+    padding: 0 2.4rem;
+  }
+
   .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 2%;
 
     &--main {
       font-size: var(--font-heading-tablet);
@@ -36,5 +25,14 @@
     &--sub {
       font-size: var(--font-body-tablet);
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .navigation__nav-bar > * {
+    padding-right: 1.7rem !important;
+
+      font-size:1.3rem;
+
   }
 }
