@@ -55,35 +55,27 @@
   padding-top: 10rem;
   transition: 0.4s;
 
-  //display menu on haburger
-  &--home,
-  &--menu,
-  &--contact,
-  &--about,
-  &--login,
   &--shopping-cart {
+    fill: var(--color-font-normal);
+    width: 2rem;
+  }
+  //display menu on haburger
+  & > * {
     display: block;
     text-align: center;
     text-decoration: none;
     color: var(--color-font-normal);
     font-size: var(--font-body-desktop);
-  }
 
-  &--home:hover,
-  &--menu:hover,
-  &--contact:hover,
-  &--about:hover,
-  &--login:hover,
-  &--shopping-cart:hover {
-    color: #adadad;
-    cursor: default;
+    &:hover {
+      color: #adadad;
+      cursor: default;
+    }
   }
-
- 
 }
- ///hamburger is visible --> have active class
-  .hamburger__nav.is-active {
-    left: 0;
-    position: absolute;
-    z-index: 99;
-  }
+///hamburger is visible --> have active class
+.hamburger__nav.is-active {
+  left: 0;
+  position: absolute;
+  z-index: 99;
+}

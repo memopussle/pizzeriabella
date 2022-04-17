@@ -13,19 +13,26 @@
 
     &--shopping-cart {
       width: 1.5rem;
+    
     }
 
-    &--home,
-    &--about,
-    &--menu,
-    &--contact,
-    &--login {
-      font-size: 1.5rem;
-      color: var(--color-font-normal);
-      font-weight: 300;
-      text-decoration: none;
-    }
   }
+
+   &__nav-bar > * {
+      font-size: 1.5rem;
+      font-weight: 300;
+
+      & > * {
+        text-decoration: none;
+         color: var(--color-font-normal);
+
+         &:hover {
+           color: var(--color-font-gray);
+         }
+      }
+    }
+
+
 
   &__logo {
     width: 30rem;
@@ -36,7 +43,7 @@
 }
 
 .home-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(../img/header.jpg);
 
   background-size: cover;
@@ -60,6 +67,7 @@
 
   &--hamburger,
   &--shopping-cart {
-    width: 2rem;
+    width: 20rem;
+    fill:white;
   }
 }

@@ -40,10 +40,18 @@ body {
   width: 1.5rem;
 }
 
-.navigation__nav--home, .navigation__nav--about, .navigation__nav--menu, .navigation__nav--contact, .navigation__nav--login {
+.navigation__nav-bar > * {
   font-size: 1.5rem;
-  color: var(--color-font-normal);
   font-weight: 300;
+}
+
+.navigation__nav-bar > * > * {
+  text-decoration: none;
+  color: var(--color-font-normal);
+}
+
+.navigation__nav-bar > * > *:hover {
+  color: var(--color-font-gray);
 }
 
 .navigation__logo {
@@ -54,8 +62,8 @@ body {
 }
 
 .home-background {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/header.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(../img/header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -80,7 +88,8 @@ body {
 }
 
 .nav__medium--hamburger, .nav__medium--shopping-cart {
-  width: 2rem;
+  width: 20rem;
+  fill: white;
 }
 
 .header {
@@ -118,6 +127,7 @@ body {
   --color-font-normal: #ffffff;
   --color-primary: #B1441E;
   --color-primary-dark: #000000;
+  --color-font-gray: #d0d0d0;
 }
 
 :root {
@@ -195,7 +205,12 @@ body {
   transition: 0.4s;
 }
 
-.hamburger__nav--home, .hamburger__nav--menu, .hamburger__nav--contact, .hamburger__nav--about, .hamburger__nav--login, .hamburger__nav--shopping-cart {
+.hamburger__nav--shopping-cart {
+  fill: var(--color-font-normal);
+  width: 2rem;
+}
+
+.hamburger__nav > * {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -203,7 +218,7 @@ body {
   font-size: var(--font-body-desktop);
 }
 
-.hamburger__nav--home:hover, .hamburger__nav--menu:hover, .hamburger__nav--contact:hover, .hamburger__nav--about:hover, .hamburger__nav--login:hover, .hamburger__nav--shopping-cart:hover {
+.hamburger__nav > *:hover {
   color: #adadad;
   cursor: default;
 }

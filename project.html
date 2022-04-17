@@ -24,7 +24,12 @@
            <a href="#"  class="hamburger__nav--menu  pb-4">Menu</a>
            <a href="#"  class="hamburger__nav--contact  pb-4">Contact</a>
            <a href="#" class="hamburger__nav--login  pb-4">Login</a>
-           <a href="#" class="hamburger__nav--shopping-cart  pb-4"><img src="img/shopping-cart.svg" alt="Logo on menu"></a>
+           <a href="#" class="hamburger__nav--shopping-cart  pb-4">
+               <svg class="hamburger__nav--shopping-cart">
+              <!--svg icon is recommended-->
+              <use xlink:href="img/symbol.svg#icon-cart"></use>
+            </svg>
+           </a>
        </nav>
        <!--NAVIGATION ON MD-->
 
@@ -51,12 +56,12 @@
                 <img class="navigation__logo" src="img/logo.svg" alt="logo">
                </div>
                <div class="col-4 navigation__nav">
-                <ul class="list-unstyled d-flex">
-                    <li class="navigation__nav--home pe-5"><a href="#">Home</a></li>
-                    <li class="navigation__nav--about pe-5"><a href="#">About</a></li>
-                    <li class="navigation__nav--menu pe-5"><a href="#">Menu</a></li>
-                    <li class="navigation__nav--contact pe-5"><a href="#">Contact</a></li>
-                    <li class="navigation__nav--login pe-5"><a href="#">Login</a></li>
+                <ul class="list-unstyled d-flex navigation__nav-bar">
+                    <li class="pe-5"><a href="#">Home</a></li>
+                    <li class="pe-5"><a href="#">About</a></li>
+                    <li class="pe-5"><a href="#">Menu</a></li>
+                    <li class="pe-5"><a href="#">Contact</a></li>
+                    <li class="pe-5"><a href="#">Login</a></li>
                     <li>
                         <a href="#"><img class="navigation__nav--shopping-cart"src="img/shopping-cart.svg" alt="shopping-cart"></a>
                     </li>
