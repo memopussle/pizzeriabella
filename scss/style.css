@@ -38,6 +38,8 @@ body {
 
 .navigation__nav--shopping-cart {
   width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--color-font-normal);
 }
 
 .navigation__nav-bar > * {
@@ -88,7 +90,8 @@ body {
 }
 
 .nav__medium--hamburger, .nav__medium--shopping-cart {
-  width: 20rem;
+  width: 2rem;
+  height: 2rem;
   fill: white;
 }
 
@@ -127,7 +130,7 @@ body {
   --color-font-normal: #ffffff;
   --color-primary: #B1441E;
   --color-primary-dark: #000000;
-  --color-font-gray: #d0d0d0;
+  --color-font-gray: #9b9a9a;
 }
 
 :root {
@@ -208,6 +211,11 @@ body {
 .hamburger__nav--shopping-cart {
   fill: var(--color-font-normal);
   width: 2rem;
+  height: 2rem;
+}
+
+.hamburger__nav--cart-effect:hover {
+  fill: var(--color-font-gray);
 }
 
 .hamburger__nav > * {
@@ -219,7 +227,7 @@ body {
 }
 
 .hamburger__nav > *:hover {
-  color: #adadad;
+  color: var(--color-font-gray);
   cursor: default;
 }
 

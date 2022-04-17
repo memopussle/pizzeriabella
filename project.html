@@ -19,15 +19,15 @@
       
        <!---==============NAVIGATION ON HAMBURGER MENU=========-->
        <nav class="hamburger__nav d-block d-lg-none">
-           <a href="#" class="hamburger__nav--home pb-4">Home</a>
-           <a href="#"  class="hamburger__nav--about  pb-4">About</a>
-           <a href="#"  class="hamburger__nav--menu  pb-4">Menu</a>
-           <a href="#"  class="hamburger__nav--contact  pb-4">Contact</a>
-           <a href="#" class="hamburger__nav--login  pb-4">Login</a>
-           <a href="#" class="hamburger__nav--shopping-cart  pb-4">
+           <a href="#" class="pb-4">Home</a>
+           <a href="#" class="pb-4">About</a>
+           <a href="#" class="pb-4">Menu</a>
+           <a href="#" class="pb-4">Contact</a>
+           <a href="#" class="pb-4">Login</a>
+           <a href="#">
                <svg class="hamburger__nav--shopping-cart">
-              <!--svg icon is recommended-->
-              <use xlink:href="img/symbol.svg#icon-cart"></use>
+              <!--file/general.svg#icon-chosensvg-->
+              <use xlink:href="img/symbol.svg#icon-cart" class="hamburger__nav--cart-effect"></use>
             </svg>
            </a>
        </nav>
@@ -44,8 +44,13 @@
                 <div class="col-7 d-flex justify-content-center align-items-center">
                     <img class="nav__medium--logo" src="img/logo-1.svg" alt="logo">
                 </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <img class="nav__medium--shopping-cart" src="img/shopping-cart.svg" alt="shopping-cart">
+                <div class="col-2 d-flex justify-content-end align-items-center">
+                    <a>
+                        <svg class="nav__medium--shopping-cart">
+                         <!--file/general.svg#icon-chosensvg-->
+                            <use xlink:href="img/symbol.svg#icon-cart" class="hamburger__nav--cart-effect"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -63,7 +68,12 @@
                     <li class="pe-5"><a href="#">Contact</a></li>
                     <li class="pe-5"><a href="#">Login</a></li>
                     <li>
-                        <a href="#"><img class="navigation__nav--shopping-cart"src="img/shopping-cart.svg" alt="shopping-cart"></a>
+                        <a href="#">
+                         <svg class="navigation__nav--shopping-cart">
+                            <!--file/general.svg#icon-chosensvg-->
+                            <use xlink:href="img/symbol.svg#icon-cart" class="hamburger__nav--cart-effect"></use>
+                        </svg>
+                        </a>
                     </li>
                 </ul>
 

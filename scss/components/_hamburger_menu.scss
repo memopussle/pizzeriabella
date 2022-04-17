@@ -58,6 +58,12 @@
   &--shopping-cart {
     fill: var(--color-font-normal);
     width: 2rem;
+    height: 2rem;
+
+  }
+
+  &--cart-effect:hover {
+    fill: var(--color-font-gray);
   }
   //display menu on haburger
   & > * {
@@ -68,7 +74,7 @@
     font-size: var(--font-body-desktop);
 
     &:hover {
-      color: #adadad;
+      color: var(--color-font-gray);
       cursor: default;
     }
   }

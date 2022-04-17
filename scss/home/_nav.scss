@@ -13,7 +13,9 @@
 
     &--shopping-cart {
       width: 1.5rem;
-    
+      height: 1.5rem;
+      //SVG -> color = fill
+      fill: var(--color-font-normal);
     }
 
   }
@@ -67,7 +69,8 @@
 
   &--hamburger,
   &--shopping-cart {
-    width: 20rem;
+    width: 2rem;
+    height: 2rem;
     fill:white;
   }
 }
