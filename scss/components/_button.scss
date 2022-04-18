@@ -11,11 +11,11 @@
     padding: 0.5rem 2rem;
     border: none;
     //ease the animation
-    transition: transform .3s;
+    transition: transform 0.3s;
 
     &:hover {
       transform: translateY(-2px) scale(1.05);
+      box-shadow: 2px 7px 9px 2px var(--color-primary-dark-1);
     }
   }
-
 }

@@ -1,41 +1,40 @@
-
 .navigation {
   padding: 3rem 0;
   position: relative;
 
   &__nav {
-
-
     &--shopping-cart {
       width: 1.5rem;
       height: 1.5rem;
       //SVG -> color = fill
       fill: var(--color-font-normal);
-    }
+      transition: transform 0.3s;
 
-  }
-
-   &__nav-bar > * {
-      font-size: 1.5rem;
-      font-weight: 300;
-
-      & > * {
-        text-decoration: none;
-         color: var(--color-font-normal);
-
-         &:hover {
-           color: var(--color-font-gray);
-         }
+      &:hover {
+        @include btn-transition;
       }
     }
+  }
 
+  &__nav-bar > * {
+    font-size: 1.5rem;
+    font-weight: 300;
 
+    & > * {
+      text-decoration: none;
+      color: var(--color-font-normal);
+
+      &:hover {
+        color: var(--color-font-gray);
+      }
+    }
+  }
 
   &__logo {
-    &--main{
-    letter-spacing: var(--spacing-logo);
-    font-weight: 300;
-    text-align: center;
+    &--main {
+      letter-spacing: var(--spacing-logo);
+      font-weight: 300;
+      text-align: center;
     }
 
     &--sub {
@@ -43,7 +42,6 @@
       display: block;
       padding-top: 0.5rem;
     }
-
   }
 }
 
@@ -67,18 +65,19 @@
     font-weight: 300;
     letter-spacing: var(--spacing-logo);
     text-align: center;
-
   }
   &--sub {
-      font-size: 0.7rem;
-      display:block;
-      padding-top: 0.5rem;
-    }
+    font-size: 0.7rem;
+    display: block;
+    padding-top: 0.5rem;
+  }
 
   &--hamburger,
   &--shopping-cart {
     width: 2rem;
     height: 2rem;
-    fill:white;
+    fill: white;
+    transition: transform .2s;
+    }
   }
 }

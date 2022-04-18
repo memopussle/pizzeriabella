@@ -1,20 +1,21 @@
 .intro {
   &__background {
-    position: absolute;
-    z-index:-1;
     width: 100vw;
-    height: 390rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 1)), url(../img/intro.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.21),
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 1)
+      ),
+      url(../img/intro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &__image {
-      max-height: 56rem;
-       background-image: url(../img/intro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/intro-1.jpg);
     background-position: center;
+    background-size: cover;
+    padding-top: calc(0.5 / 1 * 100%);
   }
 }
