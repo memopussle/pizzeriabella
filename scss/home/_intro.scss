@@ -1,21 +1,53 @@
 .intro {
+ 
   &__background {
+    position: relative;
+    z-index: -1;
+    height: 257rem;
     width: 100vw;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.21),
+      rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 1)
       ),
       url(../img/intro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+     @extend %background;
+  }
+  &__text {
+    & > * {
+      font-weight: 200;
+    }
+
+    &--main {
+      font-family: 'Mrs Saint Delafield', cursive;
+    }
+
+    &--sub {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+    }
   }
 
   &__image {
-    background-image: url(../img/intro-1.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-top: calc(0.5 / 1 * 100%);
+    &--1 {
+      background-image: url(../img/intro-1.jpg);
+      @extend %background;
+      padding-top: calc(0.5 / 1 * 100%);
+    }
+
+    &--2 {
+      background-image: url(../img/intro-2.jpg);
+      @extend %background;
+      padding-top: calc(0.5 / 1 * 100%);
+    }
+
+    
+    &--3 {
+      background-image: url(../img/intro-3.jpg);
+      @extend %background;
+      padding-top: calc(0.5 / 1 * 100%);
+    }
+
   }
 }

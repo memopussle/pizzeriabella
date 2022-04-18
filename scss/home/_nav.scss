@@ -11,7 +11,7 @@
       transition: transform 0.3s;
 
       &:hover {
-        @include btn-transition;
+       transform: translateY(-2px) scale(1.2);
       }
     }
   }
@@ -46,7 +46,7 @@
 }
 
 .home-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
     url(../img/header.jpg);
 
   background-size: cover;
@@ -79,5 +79,5 @@
     fill: white;
     transition: transform .2s;
     }
-  }
+
 }

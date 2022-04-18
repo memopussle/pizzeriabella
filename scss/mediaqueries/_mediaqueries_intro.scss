@@ -1,7 +1,51 @@
-@media only screen and (min-width: 992px) {
-  .intro {
-    &__background {
-      height: 390rem;
+@media(max-width: 769px) {
+    .intro {
+
+    &__text {
+    
+
+    &--main {
+      font-size: var(--font-heading-mobile);
+    }
+
+    &--sub {
+     font-size: var(--font-body-mobile);
     }
   }
+ }
 }
+@media (min-width: 770px) {
+.intro {
+
+    &__text {
+    
+
+    &--main {
+      font-size: var(--font-heading-desktop);
+    }
+
+    &--sub {
+     font-size: var(--font-body-tablet);
+    }
+  }
+ }
+
+}
+
+@media (min-width: 993px) {
+ .intro {
+
+    &__text {
+    
+
+    &--main {
+      font-size: 5rem;
+    }
+
+    &--sub {
+     font-size: var(--font-body-desktop);
+    }
+  }
+ }
+}
+
