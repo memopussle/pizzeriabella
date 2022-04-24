@@ -283,7 +283,7 @@ body {
   z-index: 99;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 769px) {
   .container {
     padding: 0 2.4rem;
   }
@@ -365,12 +365,12 @@ body {
 }
 
 .intro__text--main {
-  font-family: 'Mrs Saint Delafield', cursive;
+  font-family: "Mrs Saint Delafield", cursive;
 }
 
 .intro__text--sub {
   display: block;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .intro__image--1 {

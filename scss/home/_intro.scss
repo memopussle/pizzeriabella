@@ -1,18 +1,17 @@
 .intro {
- 
   &__background {
     position: relative;
     z-index: -1;
     height: 257rem;
     width: 100vw;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9),
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 1)
       ),
       url(../img/intro.jpg);
-     @extend %background;
+    @extend %background;
   }
   &__text {
     & > * {
@@ -20,12 +19,12 @@
     }
 
     &--main {
-      font-family: 'Mrs Saint Delafield', cursive;
+      font-family: "Mrs Saint Delafield", cursive;
     }
 
     &--sub {
       display: block;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: "Cormorant Garamond", serif;
     }
   }
 
@@ -42,12 +41,10 @@
       padding-top: calc(0.5 / 1 * 100%);
     }
 
-    
     &--3 {
       background-image: url(../img/intro-3.jpg);
       @extend %background;
       padding-top: calc(0.5 / 1 * 100%);
     }
-
   }
 }
