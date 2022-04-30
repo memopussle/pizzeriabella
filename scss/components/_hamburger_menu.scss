@@ -45,7 +45,6 @@
 
 //MENU ON HAMBURGER WILL DISPLAY ON FULL SCREEN
 .hamburger__nav {
-  display: block;
   position: fixed;
   top: 0;
 
@@ -56,6 +55,7 @@
   background-color: var(--color-primary-dark);
   padding-top: 13rem;
   transition: 0.4s;
+
 
   &--shopping-cart {
     fill: var(--color-font-normal);

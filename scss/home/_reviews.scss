@@ -1,0 +1,41 @@
+.reviews {
+  &__text {
+    letter-spacing: var(--spacing-tablet);
+    text-align: center;
+  }
+}
+
+.slider {
+  width: 0%;
+  height: 25rem;
+  overflow: hidden;
+
+  &__inner {
+    height: 100%;
+    width: 150%;
+
+    //GRID
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    pointer-events: none;
+
+    & > * {
+      height: 100%;
+      @extend %background;
+    }
+
+    &--1 {
+      background-image: url(../img/intro-1.jpg);
+    }
+    &--2 {
+      background-image: url(../img/intro-1.jpg);
+    }
+    &--3 {
+      background-image: url(../img/intro-1.jpg);
+    }
+    &--4 {
+      background-image: url(../img/intro-1.jpg);
+    }
+  }
+}

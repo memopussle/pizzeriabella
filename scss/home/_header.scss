@@ -19,17 +19,13 @@
     &--main {
       //separate main as a block
       display: block;
-      text-transform: uppercase;
-      letter-spacing: 1.5rem;
-      font-size: var(--font-heading-desktop);
-      font-weight: light;
+      font-weight: 400;
     }
 
     &--sub {
       //separate sub as a display: block
       display: block;
       font-size: var(--font-body-desktop);
-      font-weight: 100;
     }
   }
 }

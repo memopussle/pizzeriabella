@@ -14,17 +14,15 @@
     @extend %background;
   }
   &__text {
-    & > * {
-      font-weight: 200;
-    }
 
     &--main {
-      font-family: "Mrs Saint Delafield", cursive;
+      font-family: 'Mrs Saint Delafield', cursive;
     }
 
     &--sub {
       display: block;
-      font-family: "Cormorant Garamond", serif;
+      font-weight: 200;
+      font-family: 'Cormorant Garamond', serif;
     }
   }
 
