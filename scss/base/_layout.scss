@@ -1,7 +1,12 @@
 :root {
-  --padding-normal: 8rem;
+  --padding-normal: 15rem;
+  --padding-short: 5rem;
 }
 
 .padding-normal {
   padding-top: var(--padding-normal);
+}
+
+.padding-short {
+  padding-top: var(--padding-short);
 }

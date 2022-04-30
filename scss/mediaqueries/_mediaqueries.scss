@@ -7,6 +7,7 @@
   .header__text-box {
     &--main {
       font-size: var(--font-heading-mobile);
+       letter-spacing: 0.2rem;
 
     }
 
@@ -21,6 +22,8 @@
   .header__text-box {
     &--main {
       font-size: var(--font-heading-tablet);
+      
+      letter-spacing: var(--spacing-tablet);
     }
 
      &--sub {
@@ -34,16 +37,19 @@
   .header__text-box {
     &--main {
       font-size: var(--font-heading-desktop);
+      letter-spacing: var(--spacing-heading);
 
     }
 
     &--sub {
       font-size: var(--font-body-desktop);
     }
+
+   
   }
 
   .navigation__nav-bar > * {
-    font-size: var(--font-body-tablet);
+    font-size: var(--font-body-desktop);
     padding-right: 1.5rem;
   }
 }

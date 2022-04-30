@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&family=Mrs+Saint+Delafield&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mrs+Saint+Delafield&display=swap");
 body {
   font-family: "Cormorant Garamond", serif;
 }
@@ -19,6 +19,9 @@ body {
 *::before {
   margin: 0;
   padding: 0;
+  font-weight: 200;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .navigation {
@@ -43,7 +46,6 @@ body {
 
 .navigation__nav-bar > * {
   font-size: 1.5rem;
-  font-weight: 300;
 }
 
 .navigation__nav-bar > * > * {
@@ -57,7 +59,6 @@ body {
 
 .navigation__logo--main {
   letter-spacing: var(--spacing-logo);
-  font-weight: 300;
   text-align: center;
 }
 
@@ -68,11 +69,8 @@ body {
 }
 
 .home-background {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(../img/header.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../img/header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../img/header.jpg);
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -83,7 +81,6 @@ body {
 }
 
 .nav__medium--logo {
-  font-weight: 300;
   letter-spacing: var(--spacing-logo);
   text-align: center;
 }
@@ -127,16 +124,12 @@ body {
 
 .header__text-box--main {
   display: block;
-  text-transform: uppercase;
-  letter-spacing: 1.5rem;
-  font-size: var(--font-heading-desktop);
-  font-weight: light;
+  font-weight: 400;
 }
 
 .header__text-box--sub {
   display: block;
   font-size: var(--font-body-desktop);
-  font-weight: 100;
 }
 
 .center {
@@ -162,23 +155,28 @@ body {
 }
 
 :root {
-  --font-heading-desktop: 3.5rem;
-  --font-body-desktop: 1.5rem;
+  --font-heading-desktop: 4rem;
+  --font-body-desktop: 1.3rem;
   --font-heading-tablet: 3rem;
-  --spacing-heading: 1.5rem;
-  --font-body-tablet: 1.3rem;
-  --font-heading-mobile: 2rem;
+  --spacing-heading: 1rem;
+  --font-body-tablet: 1rem;
+  --font-heading-mobile: 2.5rem;
   --font-body-mobile: 1.1rem;
-  --spacing-tablet: 1.2rem;
+  --spacing-tablet: 0.5rem;
   --spacing-logo: 0.5rem;
 }
 
 :root {
-  --padding-normal: 8rem;
+  --padding-normal: 15rem;
+  --padding-short: 5rem;
 }
 
 .padding-normal {
   padding-top: var(--padding-normal);
+}
+
+.padding-short {
+  padding-top: var(--padding-short);
 }
 
 .btn, .btn:link, .btn:visited {
@@ -243,7 +241,6 @@ body {
 }
 
 .hamburger__nav {
-  display: block;
   position: fixed;
   top: 0;
   right: 100%;
@@ -289,6 +286,7 @@ body {
   }
   .header__text-box--main {
     font-size: var(--font-heading-mobile);
+    letter-spacing: 0.2rem;
   }
   .header__text-box--sub {
     font-size: var(--font-body-mobile);
@@ -298,6 +296,7 @@ body {
 @media (min-width: 770px) {
   .header__text-box--main {
     font-size: var(--font-heading-tablet);
+    letter-spacing: var(--spacing-tablet);
   }
   .header__text-box--sub {
     font-size: var(--font-body-tablet);
@@ -307,12 +306,13 @@ body {
 @media (min-width: 992px) {
   .header__text-box--main {
     font-size: var(--font-heading-desktop);
+    letter-spacing: var(--spacing-heading);
   }
   .header__text-box--sub {
     font-size: var(--font-body-desktop);
   }
   .navigation__nav-bar > * {
-    font-size: var(--font-body-tablet);
+    font-size: var(--font-body-desktop);
     padding-right: 1.5rem;
   }
 }
@@ -331,23 +331,32 @@ body {
   .intro__text--sub {
     font-size: var(--font-body-mobile);
   }
+  .reviews__text {
+    font-size: var(--font-heading-mobile);
+  }
 }
 
 @media (min-width: 770px) {
   .intro__text--main {
-    font-size: var(--font-heading-desktop);
+    font-size: var(--font-heading-tablet);
   }
   .intro__text--sub {
     font-size: var(--font-body-tablet);
+  }
+  .reviews__text {
+    font-size: var(--font-heading-tablet);
   }
 }
 
 @media (min-width: 993px) {
   .intro__text--main {
-    font-size: 5rem;
+    font-size: var(--font-heading-desktop);
   }
   .intro__text--sub {
     font-size: var(--font-body-desktop);
+  }
+  .reviews__text {
+    font-size: var(--font-heading-desktop);
   }
 }
 
@@ -360,17 +369,14 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), black), url(../img/intro.jpg);
 }
 
-.intro__text > * {
-  font-weight: 200;
-}
-
 .intro__text--main {
-  font-family: "Mrs Saint Delafield", cursive;
+  font-family: 'Mrs Saint Delafield', cursive;
 }
 
 .intro__text--sub {
   display: block;
-  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .intro__image--1 {
@@ -388,9 +394,51 @@ body {
   padding-top: calc(0.5 / 1 * 100%);
 }
 
-.intro__background, .intro__image--1, .intro__image--2, .intro__image--3 {
+.home-background, .intro__background, .intro__image--1, .intro__image--2, .intro__image--3, .slider__inner > * {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.reviews__text {
+  letter-spacing: var(--spacing-tablet);
+  text-align: center;
+}
+
+.slider {
+  width: 0%;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.slider__inner {
+  height: 100%;
+  width: 150%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  pointer-events: none;
+}
+
+.slider__inner > * {
+  height: 100%;
+}
+
+.slider__inner--1 {
+  background-image: url(../img/intro-1.jpg);
+}
+
+.slider__inner--2 {
+  background-image: url(../img/intro-1.jpg);
+}
+
+.slider__inner--3 {
+  background-image: url(../img/intro-1.jpg);
+}
+
+.slider__inner--4 {
+  background-image: url(../img/intro-1.jpg);
 }
 /*# sourceMappingURL=style.css.map */
